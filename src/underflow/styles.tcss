@@ -1,0 +1,134 @@
+/* Utility/General */
+.hidden {
+    display: none;
+}
+
+.button-gap {
+    width: 1fr;
+}
+
+/* Loading/Installing Screens */
+#installing,
+#loading {
+    align: center middle;
+    
+    #loading-explanation,
+    #loading-config {
+        width: auto;
+        height: auto;
+    }
+
+    #loading-bar {
+        margin-bottom: 1;
+    }
+}
+
+#installing-text {
+    width: auto;
+}
+
+#loading-text {
+    width: 10vh;
+    height: 10vh;
+    color: $foreground;
+}
+
+#loading-spinner {
+    width: auto;
+    margin-right: 1;
+}
+
+/* Main Screen Widgets */
+#buttons-widget {
+    height: auto;
+}
+
+#generating {
+    padding: 1;
+    height: 3;
+}
+
+.completion {
+    width: 100%;
+    padding-bottom: 1;
+}
+
+#header-container {
+    border: ascii $foreground;
+    height: auto;
+    padding: 1;
+}
+
+.header-button {
+    margin: 0 1;
+    padding: 0 1 0 1;
+}
+
+#output-container {
+    padding: 1;
+    border: double $foreground;
+}
+
+#logo {
+    padding: 1 2 2 2;
+    text-wrap: nowrap;
+    text-overflow: clip;
+}
+
+TextArea {
+    height: 5;
+}
+
+/* Modals */
+SaveFileModal,
+ConfirmOverwriteModal {
+    align: center middle;
+    background: $background 50%;
+}
+
+.modal-buttons {
+    align: center bottom;
+    height: auto;
+    dock: bottom;
+    margin-top: 1;
+}
+
+SaveFileModal {
+    #save-modal-container {
+        padding: 1 2;
+        border: panel $surface;
+        width: 60%;
+        height: 80%;
+
+        #file-tree {
+            border: solid $foreground;
+            height: 1fr;
+            margin: 1 0;
+        }
+
+        .nav-controls {
+            height: auto;
+            margin: 1 0;
+            
+            #up-btn {
+                min-width: 10;
+            }
+        }
+    }
+}
+
+ConfirmOverwriteModal {
+    #confirm-overwrite-container {
+        padding: 1 2 0 2;
+        border: panel $error 80%;
+        background: $surface;
+        width: 40%;
+        height: auto;
+
+        #confirm-overwrite-label {
+            width: 100%;
+            content-align: center middle;
+            padding-bottom: 1;
+        }
+    }
+}

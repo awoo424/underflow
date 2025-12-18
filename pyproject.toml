@@ -1,0 +1,47 @@
+[project]
+name = "underflow"
+version = "1.0.0"
+homepage = "https://github.com/awoo424/underflow"
+repository = "https://github.com/awoo424/underflow"
+description = "Converts input sentences into stream of consciousness text using a language model"
+authors = [
+    { name = "Angel Woo" },
+    { name = "Harrison Scott" },
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "gensim>=4.4.0",
+    "hnswlib>=0.8.0",
+    "numpy>=2.3.5",
+    "platformdirs>=4.5.1",
+    "requests>=2.32.5",
+    "rich>=14.2.0",
+    "stream-unzip>=0.0.99",
+    "terminaltexteffects>=0.14.2",
+    "textual>=6.11.0",
+    "textualeffects>=0.1.4",
+]
+
+[dependency-groups]
+dev = [
+    "licensecheck>=2025.1.0",
+    "mypy>=1.19.1",
+    "ruff>=0.14.9",
+    "types-hnswlib>=0.8.0.20250227",
+    "types-requests>=2.32.4.20250913",
+]
+
+[project.scripts]
+underflow = "underflow.main:main"
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+source-include = ["src/underflow/*.txt", "src/underflow/*.tcss", "src/underflow/*.md"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
