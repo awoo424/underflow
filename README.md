@@ -12,7 +12,7 @@ A CLI application that converts input sentences into _stream of consciousness_ t
 ### Option 1: Without cloning the repository
 
 ```bash
-uvx --from git+https://github.com/awoo424/underflow underflow
+uvx -p 3.11 --from git+https://github.com/awoo424/underflow underflow
 ```
 
 ### Option 2: By cloning the repository
