@@ -2,6 +2,8 @@
 
 A CLI application that converts input sentences into _stream of consciousness_ text using a language model.
 
+<a href="https://asciinema.org/a/Xs9Me3LJbWOZx2eSdF6vxJVkz" target="_blank"><img src="./thumbnail.png" width="800" /></a>
+
 ## Requirements
 
 - Python 3.11+
