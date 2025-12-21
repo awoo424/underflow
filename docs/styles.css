@@ -26,7 +26,7 @@ header {
 }
 
 .logo {
-    font-family: monospace;
+    font-family: 'Source Code Pro', monospace;
     font-size: 10px;
     line-height: 1.2;
     color: var(--accent-color);
@@ -52,7 +52,7 @@ header {
 }
 
 .output-sample pre {
-    font-family: monospace;
+    font-family: 'Source Code Pro', monospace;
     font-size: 14px;
     line-height: 1.4;
     color: var(--text-color);
